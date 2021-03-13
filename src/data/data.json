@@ -1,0 +1,53 @@
+[{
+        "id": 1,
+        "community": [
+            "Castilla la mancha",
+            "Madrid"
+        ],
+        "age": "2 años",
+        "name": "Mérida",
+        "sex": "Hembra",
+        "breed": [
+            "Tosa Inu"
+        ],
+        "personality": [
+            "sociable",
+            "cariñosa",
+            "equilibrada"
+        ],
+        "description": "La encanta estar con personas y dar lametones, es super juguetona y disfruta como la que más de un paseo tranquilo por el campo o paseando con más peludos",
+        "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+    },
+    {
+        "id": 2,
+        "community": "Cantabria",
+        "age": "5 años",
+        "name": "Dani",
+        "sex": "Macho",
+        "breed": [
+            "Presa Canario"
+        ],
+        "personality": [
+            "tranquilo"
+        ],
+        "description": "Dani es un cabezón de unos cinco años al que le encanta mordisquear piedras, es tranquilo aunque algunas veces se le cruza el cable y riñe con otros perros",
+        "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+    },
+    {
+        "id": 3,
+        "community": "Andalucía",
+        "age": "2 años",
+        "name": "Gea",
+        "sex": "Hembra",
+        "breed": [
+            "Pitbull"
+        ],
+        "personality": [
+            "cariñosa",
+            "juguetona",
+            "tranquila"
+        ],
+        "description": "A Gea la encontraron abandonada con su compañero Atlas en muy malas condiciones, creian que estaba embarazada ya que tenía la tripa hinchada pero eran huesos y piedras lo que tenía en el estómago. A pesar de eso es una perra 10, cariñosa con perros, gatos y cualquier ser vivo",
+        "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+    }
+]
