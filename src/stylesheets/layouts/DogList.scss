@@ -1,0 +1,35 @@
+@import '../core/variables.scss';
+@import '../core/reset.scss';
+.article {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    l &__image {
+        width: 100%;
+    }
+    &__button {
+        margin: auto;
+        width: 80%;
+        height: 30px;
+        color: white;
+        background-color: $brandColor-1;
+        border: none;
+        border-radius: 25px;
+    }
+}
+
+.nameGender {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 10px;
+    &__name {
+        font-family: $brandFont;
+        font-size: 20px;
+        color: $brandColor-4;
+    }
+    &__gender {
+        font-size: 20px;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+}

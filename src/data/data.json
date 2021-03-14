@@ -1,53 +1,76 @@
 [{
         "id": 1,
         "community": [
-            "Castilla la mancha",
-            "Madrid"
+            "Andalucía"
         ],
         "age": "2 años",
-        "name": "Mérida",
-        "sex": "Hembra",
+        "name": "Zeus",
+        "genders": "Macho",
         "breed": [
-            "Tosa Inu"
+            "Mastín"
         ],
         "personality": [
-            "sociable",
-            "cariñosa",
-            "equilibrada"
+            "juguetón",
+            "tranquilo",
+            "equilibrado"
         ],
-        "description": "La encanta estar con personas y dar lametones, es super juguetona y disfruta como la que más de un paseo tranquilo por el campo o paseando con más peludos",
-        "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+        "description": "Mastín español. Llevaba más de una semana vagando por las calles de Sanlúcar hasta que avisaron a la policía y lo iban a llevar a la perrera, actuamos y evitamos eso. Con leishmania pillada a tiempo, ha estado bajo tratamiento desde mayo y se le han reducido tanto los valores que ha dado negativo tras cuatro meses de tratamiento. . Se cree un chihuahua bebé, es juguetón, travieso, delicado y tranquilo, sociable con otros perros. . La Asociación de Rescate Animal Brigada Animalista entrega a sus animales a adoptantes responsables, con cuestionario previo, contrato de adopción y seguimiento, así como apoyo y asesoramiento durante el proceso de adaptación y la vida del animal. Estamos en Sanlúcar de Barrameda (Cádiz), pero enviamos mediante transporte animalista a cualquier parte de la península.",
+        "url": "https://img.miwuki.com/a/XJTEIX",
+        "Asociation": "Brigada animalista"
     },
     {
         "id": 2,
-        "community": "Cantabria",
+        "community": "Murcia",
         "age": "5 años",
-        "name": "Dani",
-        "sex": "Macho",
+        "name": "Yeiko",
+        "genders": "Macho",
         "breed": [
-            "Presa Canario"
+            "Pastor alemán",
+            "mix"
         ],
         "personality": [
-            "tranquilo"
+            "cariñoso"
         ],
-        "description": "Dani es un cabezón de unos cinco años al que le encanta mordisquear piedras, es tranquilo aunque algunas veces se le cruza el cable y riñe con otros perros",
-        "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+        "description": "Tras el fallecimiento de la persona que vivía en el terreno donde rescatábamos animales habitualmente, ahora todos los animales que tenía allí se han quedado sin hogar. Es positivo en Lehismanía pero está en tratamiento, es bueno con otros perros y con niños ",
+        "url": "https://img.miwuki.com/a/ETG0Q2",
+        "Asociation": "refugiados"
     },
     {
         "id": 3,
         "community": "Andalucía",
-        "age": "2 años",
-        "name": "Gea",
-        "sex": "Hembra",
+        "age": "3 años",
+        "name": "Nerón",
+        "genders": "Macho",
+        "breed": [
+            "cocker spaniel",
+            "mix"
+        ],
+        "personality": [
+            "cariñoso",
+            "jugueton",
+            "dormilón"
+        ],
+        "description": "Os presentamos a Nerón,un mestizo de 2 años que vagaba por un pueblo cercano al nuestro mendigando comida de un lugar a otro con el peligro de ser atropellado. Sinceramente, es un perro ideal, tiene 2 años es super sociable con otros perros, extremadamente cariñoso, sabe pasear genial y también es apto con los gatos. Nerón necesita una familia que le haga olvidar su pasado, que le den muuuuuuucho amor porque el los recompensará con creces. Se encuentra en un pueblo de Córdoba pero podría viajar donde fuese necesario. Si tu también te has enamorado de este ojazos y quieres incorporarlo a tu familia no dudes en ponerte en contacto con nosotros.",
+        "url": "https://img.miwuki.com/a/GWAJST",
+        "Asociation": "callejeros de Fernán nuñez"
+    },
+    {
+        "id": 4,
+        "community": "Andalucía",
+        "age": "9 años",
+        "name": "Romeo",
+        "genders": "Macho",
         "breed": [
             "Pitbull"
         ],
         "personality": [
-            "cariñosa",
-            "juguetona",
-            "tranquila"
+            "protector",
+            "independiente",
+            "cariñoso",
+            "protector"
         ],
-        "description": "A Gea la encontraron abandonada con su compañero Atlas en muy malas condiciones, creian que estaba embarazada ya que tenía la tripa hinchada pero eran huesos y piedras lo que tenía en el estómago. A pesar de eso es una perra 10, cariñosa con perros, gatos y cualquier ser vivo",
-        "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+        "description": "Es un ejemplar bellísimo, de color leonado su pelaje, ojos negros y expresivos, unas ganas de socializar con otros perros, mucho mejor hembras y con personas. Es ya un abuelo, aunque él no lo sabe, lo llevamos a adiestrar a Evolucan, está aprendiendo a ser perro, a disfrutar, a estar tranquilo y a realizar las acciones que se le indican, sienta, atumba. Le encanta ir en coche y pasear.",
+        "url": "https://img.miwuki.com/a/Y3W77V",
+        "Asociation": "amores incondicionales"
     }
 ]

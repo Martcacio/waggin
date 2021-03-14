@@ -1,7 +1,7 @@
 import "../stylesheets/filters/FilterByBreed.scss";
 const FilterByBreed = (props) => {
   const handleChange = (ev) => {
-    props.handleFilter({ key: "planet", value: ev.target.value });
+    props.handleFilter({ key: "breed", value: ev.target.value });
   };
   return (
     <form className="">
@@ -12,15 +12,15 @@ const FilterByBreed = (props) => {
         className="breed__select"
         type="text"
         name="breed"
-        value={props.planet}
+        value={props.breed}
         id="breed"
         onChange={handleChange}
       >
-        <option value="all">Cualquiera</option>
-        <option value="Tosa Inu">Tosa Inu</option>
-        <option value="Pit bull">Pit bull</option>
-        <option value="Rotweiller">Rotweiller</option>
-        <option value="Mastín">Mastín</option>
+        <option value="all"> Cualquiera </option>
+        <option value="Tosa Inu"> Tosa Inu </option>
+        <option value="Pit bull"> Pit bull </option>
+        <option value="Rotweiller"> Rotweiller </option>
+        <option value="Mastín"> Mastín </option>
       </select>
     </form>
   );

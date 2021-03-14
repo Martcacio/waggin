@@ -2,11 +2,15 @@
 @import './core/reset.scss';
 .header {
     height: 100px;
-    background-color: $brandColor-2;
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    align-items: center;
     &__logo {
-        width: 200px;
+        width: 180px;
     }
+}
+
+.main__filters {
+    display: flex;
+    justify-content: center;
 }
