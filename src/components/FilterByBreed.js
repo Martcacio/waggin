@@ -17,9 +17,9 @@ const FilterByBreed = (props) => {
         onChange={handleChange}
       >
         <option value="all"> Cualquiera </option>
-        <option value="Tosa Inu"> Tosa Inu </option>
-        <option value="Pit bull"> Pit bull </option>
-        <option value="Rotweiller"> Rotweiller </option>
+        <option value="Mix">Mix</option>
+        <option value="Pitbull"> Pitbull </option>
+        <option value="Pastor Alemán">Pastor Alemán </option>
         <option value="Mastín"> Mastín </option>
       </select>
     </form>

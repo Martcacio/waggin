@@ -6,12 +6,17 @@ const Filter = (props) => {
   const handleReset = () => {
     props.handleReset();
   };
+  const handleChange = () => {
+    props.handleChange();
+  };
+
   return (
     <div className="filter-container">
       <FilterByBreed
         handleFilter={props.handleFilter}
         breed={props.breed}
         handleReset={props.handleReset}
+        handleChange
       />
       <FilterByCommunity
         handleFilter={props.handleFilter}

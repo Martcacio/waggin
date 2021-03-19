@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "../stylesheets/layouts/Dog.scss";
+import { Link } from "react-router-dom";
+import logo from "../images/logo.png";
 
 const Dog = (props) => {
   let genderColor = "";
-  if (props.dogs.gender === "Female") {
+  if (props.dogs.gender === "Hembra") {
     genderColor = "pink";
   } else {
     genderColor = "blue";
@@ -16,22 +18,27 @@ const Dog = (props) => {
         src={props.dogs.url}
         alt={props.dogs.name}
       />
-      <div className="nameGender">
-        <p className="nameGender__name">{props.dogs.name}</p>
-        <div className="nameGender__gender">
-          {props.dogs.gender === "Female" ? (
-            <i
-              class={` nameGender__gender--female fas fa-venus  ${genderColor}`}
-            ></i>
-          ) : (
-            <i
-              class={` nameGender__gender--male fas fa-mars ${genderColor}`}
-            ></i>
-          )}
+      <div className="underPhoto">
+        <div className="nameGender">
+          <p className="nameGender__name"> {props.dogs.name} </p>
+          <div className="nameGender__gender">
+            {props.dogs.gender === "Hembra" ? (
+              <i
+                className={` nameGender__gender--female fas fa-venus  ${genderColor}`}
+              ></i>
+            ) : (
+              <i
+                className={` nameGender__gender--male fas fa-mars ${genderColor}`}
+              ></i>
+            )}
+          </div>
         </div>
       </div>
-
-      <button className="article__button">Ver perfil</button>
+      <Link className="link" to={"/dog/" + props.dogs.id}>
+        <li className="">
+          <button className="article__button"> Ver perfil </button>
+        </li>
+      </Link>
     </article>
   );
 };

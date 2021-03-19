@@ -1,11 +1,9 @@
 [{
         "id": 1,
-        "community": [
-            "Andalucía"
-        ],
+        "community": "Andalucía",
         "age": "2 años",
         "name": "Zeus",
-        "genders": "Macho",
+        "gender": "Macho",
         "breed": [
             "Mastín"
         ],
@@ -16,34 +14,36 @@
         ],
         "description": "Mastín español. Llevaba más de una semana vagando por las calles de Sanlúcar hasta que avisaron a la policía y lo iban a llevar a la perrera, actuamos y evitamos eso. Con leishmania pillada a tiempo, ha estado bajo tratamiento desde mayo y se le han reducido tanto los valores que ha dado negativo tras cuatro meses de tratamiento. . Se cree un chihuahua bebé, es juguetón, travieso, delicado y tranquilo, sociable con otros perros. . La Asociación de Rescate Animal Brigada Animalista entrega a sus animales a adoptantes responsables, con cuestionario previo, contrato de adopción y seguimiento, así como apoyo y asesoramiento durante el proceso de adaptación y la vida del animal. Estamos en Sanlúcar de Barrameda (Cádiz), pero enviamos mediante transporte animalista a cualquier parte de la península.",
         "url": "https://img.miwuki.com/a/XJTEIX",
-        "Asociation": "Brigada animalista"
+        "Asociation": "Brigada animalista",
+        "link": "https://www.facebook.com/brigadaanimalista/groups"
     },
     {
         "id": 2,
         "community": "Murcia",
         "age": "5 años",
         "name": "Yeiko",
-        "genders": "Macho",
+        "gender": "Macho",
         "breed": [
-            "Pastor alemán",
-            "mix"
+            "Pastor Alemán",
+            "Mix"
         ],
         "personality": [
             "cariñoso"
         ],
         "description": "Tras el fallecimiento de la persona que vivía en el terreno donde rescatábamos animales habitualmente, ahora todos los animales que tenía allí se han quedado sin hogar. Es positivo en Lehismanía pero está en tratamiento, es bueno con otros perros y con niños ",
         "url": "https://img.miwuki.com/a/ETG0Q2",
-        "Asociation": "refugiados"
+        "Asociation": "refugiados",
+        "link": "https://refugiadosct.org/"
     },
     {
         "id": 3,
         "community": "Andalucía",
         "age": "3 años",
         "name": "Nerón",
-        "genders": "Macho",
+        "gender": "Macho",
         "breed": [
-            "cocker spaniel",
-            "mix"
+            "Cocker Spaniel",
+            "Mix"
         ],
         "personality": [
             "cariñoso",
@@ -52,14 +52,15 @@
         ],
         "description": "Os presentamos a Nerón,un mestizo de 2 años que vagaba por un pueblo cercano al nuestro mendigando comida de un lugar a otro con el peligro de ser atropellado. Sinceramente, es un perro ideal, tiene 2 años es super sociable con otros perros, extremadamente cariñoso, sabe pasear genial y también es apto con los gatos. Nerón necesita una familia que le haga olvidar su pasado, que le den muuuuuuucho amor porque el los recompensará con creces. Se encuentra en un pueblo de Córdoba pero podría viajar donde fuese necesario. Si tu también te has enamorado de este ojazos y quieres incorporarlo a tu familia no dudes en ponerte en contacto con nosotros.",
         "url": "https://img.miwuki.com/a/GWAJST",
-        "Asociation": "callejeros de Fernán nuñez"
+        "Asociation": "callejeros de Fernán nuñez",
+        "link": "https://www.wallamascotas.com/web3/origen/asociacion-callejeros-de-fernan-nunez/"
     },
     {
         "id": 4,
         "community": "Andalucía",
         "age": "9 años",
         "name": "Romeo",
-        "genders": "Macho",
+        "gender": "Macho",
         "breed": [
             "Pitbull"
         ],
@@ -71,6 +72,167 @@
         ],
         "description": "Es un ejemplar bellísimo, de color leonado su pelaje, ojos negros y expresivos, unas ganas de socializar con otros perros, mucho mejor hembras y con personas. Es ya un abuelo, aunque él no lo sabe, lo llevamos a adiestrar a Evolucan, está aprendiendo a ser perro, a disfrutar, a estar tranquilo y a realizar las acciones que se le indican, sienta, atumba. Le encanta ir en coche y pasear.",
         "url": "https://img.miwuki.com/a/Y3W77V",
-        "Asociation": "amores incondicionales"
+        "Asociation": "amores incondicionales",
+        "link": "https://asoamoresincondicionales.jimdofree.com/"
+    },
+    {
+        "id": 5,
+        "community": "Murcia",
+        "age": "1 año",
+        "name": "Lia",
+        "gender": "Hembra",
+        "breed": [
+            "mix"
+        ],
+        "personality": [
+            "bueno con otros perros",
+            "bueno con niños",
+            "a veces ladro",
+            "cariñosa"
+        ],
+        "description": "LIA necesita ACOGIDA MUY URGENTE. (o mejor, ADOPCIÓN) Es un caso un poco complicado. ➡ 1 año y 3 meses. Nació en Junio de 2018. ➡ Tamaño mediano. (unos 15 kg) ➡ Sociable con perr@s (convive en manada). ➡ Cariñosa con personas. Sociable con otr@s perr@s; convive en manada y nunca da ningún problema. Es una perra bastante activa, le gusta muchiiiiiiisimo jugar con la pelota. ➡ Necesita una persona con PACIENCIA. Es una perra que cuando sale del Refugio tiene mucho miedo . No muestra agresividad NUNCA pero se asusta con facilidad .. Por eso necesita una persona QUE TENGA TIEMPO para quitarla esos miedos dejándola el espacio que necesita. Una persona que con cautela le enseñe podría hacer que se le quitaran los miedos que tiene en la calle. ➡ Fue encontrada junto a una tubería al lado de un canal en medio del campo con unas 3-4 semanas. Se encuentra en Lorca (Murcia) pero puede viajar a Madrid o a proximidades donde nuestra etóloga pueda ayudar si es necesario a la familia.",
+        "url": "https://img.miwuki.com/a/MQ0660",
+        "Asociation": "el refugio de tizziano",
+        "link": "https://elrefugiodetizziano.org/"
+    },
+    {
+        "id": 6,
+        "community": "Valencia",
+        "age": "9 años",
+        "name": "Pipo",
+        "gender": "Macho",
+        "breed": [
+            "mix"
+        ],
+        "personality": [
+            "bueno con otros perros",
+            "bueno con niños",
+            "a veces ladro",
+            "cariñoso",
+            "tímido"
+        ],
+        "description": " Pipo es un jovenzuelo de tamaño grande, es un poco tímido, pero en cuanto coge confianza es muy muy cariñoso.",
+        "url": "https://img.miwuki.com/a/266CQ2",
+        "Asociation": "La perrita valiente",
+        "link": "http://laperritavaliente.org/"
+    },
+    {
+        "id": 7,
+        "community": "Madrid",
+        "age": "8 años",
+        "name": "Sota",
+        "gender": "Macho",
+        "breed": [
+            "mix"
+        ],
+        "personality": [
+            "bueno con otros perros",
+            "bueno con niños",
+            "cariñoso"
+        ],
+        "description": " Sota es tamaño grande, es un poco tímido, pero en cuanto coge confianza es muy muy cariñoso, también es bueno con extraños",
+        "url": "https://img.miwuki.com/a/5PKE36",
+        "Asociation": "Nuevavida adopciones",
+        "link": "https://nuevavida-adopciones.org/"
+    },
+    {
+        "id": 8,
+        "community": "Madrid",
+        "age": "4 años",
+        "name": "Keto",
+        "gender": "Macho",
+        "breed": [
+            "Galgo"
+        ],
+        "personality": [
+            "bueno con otros perros",
+            "bueno con niños",
+            "cariñoso"
+        ],
+        "description": "Un galguito hermoso que va superando sus miedos",
+        "url": "https://img.miwuki.com/a/YK0TLS",
+        "Asociation": "Siempre fiel protectora",
+        "link": "https://siemprefiel.es/"
+    },
+    {
+        "id": 9,
+        "community": "Andalucía",
+        "age": "6 años",
+        "name": "Jazz",
+        "gender": "Macho",
+        "breed": [
+            "Pitbull"
+        ],
+        "personality": [
+            "bueno solo con hembras",
+            "bueno con niños",
+            "cariñoso"
+        ],
+        "description": "Jazz es un bonachón, es un perro muy activo que lo pasa muy mal encerrado en el refugio. Es un poco dominante con la comida seguramente porque paso hambre. Le encanta salir a jugar y correr. Es muy cariñoso con las personas. Necesaria licencia PPP.",
+        "url": "https://img.miwuki.com/a/9C19Z0",
+        "Asociation": "ABYDA Jaén",
+        "link": "http://abydajaenblog.blogspot.com/"
+    },
+    {
+        "id": 10,
+        "community": "Andalucía",
+        "age": "5 años",
+        "name": "Rosseta",
+        "gender": "Hembra",
+        "breed": [
+            "Pitbull"
+        ],
+        "personality": [
+            "bueno con animales",
+            "bueno con niños",
+            "cariñoso",
+            "juguetona"
+        ],
+        "description": "Esta es Rosseta. Legó al refugio muy delgadita.¡ Pasada la cuarentena está lista y preciosa para ser adoptada! Es cariñosa y juguetona. ¡Merece que una buena familia la adopte! Anímate y contacta con nosotras. Ella te está esperando.",
+        "url": "https://img.miwuki.com/a/VIGUZW",
+        "Asociation": "Dejan huella",
+        "link": "https://www.facebook.com/DEJAN-HUELLA-NECESITAMOS-VUESTRA-AYUDA-104261629671919/"
+    },
+    {
+        "id": 11,
+        "community": "Aragón",
+        "age": "11 años",
+        "name": "Noa",
+        "gender": "Hembra",
+        "breed": [
+            "Fox Terrier"
+        ],
+        "personality": [
+            "bueno con machos",
+            "bueno con niños",
+            "no ladro",
+            "cariñoso",
+            "juguetona"
+        ],
+        "description": "Noa es procedente de un criadero el cual quería sacrificarla al ver que nació con malformaciones. Una mujer se apiadó de ella y se la quedó. Noa no salía a la calle y por tanto no sociabilizó con perros. La persona que se quedó a Noa se hizo mayor y se quedó sola por lo que acabo en la familia Adala. Noa es una Fox Terrier de 11 años y tamaño pequeño. Con personas es un amor pero con otros perros no puede convivir ya que no está sociabilizada. A pesar de ello, se está trabajando con ella y en la calle no muestra problemas con estos. No es apta con gatos. Busca adopción en Zaragoza o el resto de Aragón (no se envía) Anímate a conocerla! 😉 Se merece pasar sus últimos años en una familia definitiva que le dé el cariño que tanto le ha faltado.",
+        "url": "https://img.miwuki.com/a/W2TZCC",
+        "Asociation": "Adala Zaragoza",
+        "link": "https://www.facebook.com/adalazaragoza/"
+    },
+    {
+        "id": 12,
+        "community": "Castilla la Mancha",
+        "age": "3 años",
+        "name": "Ironman",
+        "gender": "Macho",
+        "breed": [
+            "Mix",
+            "Pitbull"
+        ],
+        "personality": [
+            "bueno con perros",
+            "no ladro",
+            "cariñoso",
+            "juguetona"
+        ],
+        "description": " mestizo nacido aprox en abril 2018. Como puede alguien no haber descubierto la ternura en ti y haberse deshecho tan fácilmente de una vida llena de alegría y amor.. Nunca lo entenderemos.. Este perrete, además de un guaperas, es dulce, tierno y cariñoso. Convive perfectamente con perros y humanos. A el le pasó como a muchos: al llegar al refugio rebosaba energía por los poros de la piel, pues había llegado a un lugar donde jugar y correr como loco... Al paso de los días empezó a sentirse mas triste y solo, a sentirse uno mas en el refugio.. A pesar del bajón, busca el cariño en la gente del refugio, busca agradar y sentirse arropado y mimado. Es un perro alegre con el que poder disfrutar y jugar. Si quieres conocerle y darle una oportunidad enseguida te darás cuenta de que tras su rostro de bombón hay un gran perro, sociable, bueno y noble. ",
+        "url": "https://img.miwuki.com/a/3IIG4J",
+        "Asociation": "Doghorse City",
+        "link": "https://www.doghorsecity.org/"
     }
 ]

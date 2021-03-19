@@ -17,13 +17,13 @@ const FilterByCommunity = (props) => {
         onChange={handleChange}
       >
         <option value="all">Todas</option>
-        <option value="Andalucia">Andalucía</option>
+        <option value="Andalucía">Andalucía</option>
         <option value="Aragon">Aragón</option>
         <option value="Asturias">Asturias</option>
         <option value="Baleares">Baleares</option>
         <option value="Canarias">Canarias</option>
         <option value="Cantabria">Cantabria</option>
-        <option value="Castilla y leon">Castilla y león</option>
+        <option value="Castilla y león">Castilla y león</option>
         <option value="Castilla la mancha">Castilla la mancha</option>
         <option value="Cataluña">Cataluña</option>
         <option value="Valencia">Valencia</option>

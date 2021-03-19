@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import DogList from "./DogList";
+import DogCard from "./DogCard";
 import Filter from "./Filter";
 import data from "../data/data.json";
 import { Route, Switch } from "react-router-dom";
@@ -14,7 +16,6 @@ const App = () => {
   const handleFilter = (dataFilter) => {
     if (dataFilter.key === "breed") {
       setBreed(dataFilter.value);
-      console.log();
     } else if (dataFilter.key === "community") {
       setCommunity(dataFilter.value);
     }
@@ -25,24 +26,56 @@ const App = () => {
     setCommunity("all");
   };
 
+  const filterDogs = dogs
+    .filter((dogs) => {
+      return breed === "all" ? true : dogs.breed.includes(breed);
+    })
+    .filter((dogs) => {
+      return community === "all" ? true : dogs.community === community;
+    });
+
+  const renderLanding = (props) => {
+    return (
+      <>
+        <header className="header">
+          <div>
+            <img className="header__logo" src={logo} alt="logo waggin" />
+          </div>
+        </header>
+        <section className="main__filters">
+          <Filter
+            className="filters"
+            handleFilter={handleFilter}
+            handleReset={handleReset}
+            breed={breed}
+            community={community}
+          />
+          <Link className="link__search" to="/dog/">
+            <li className=""> Buscar </li>
+          </Link>
+        </section>
+      </>
+    );
+  };
+
+  const renderSearch = (props) => {
+    return <DogList dogs={filterDogs} />;
+  };
+
+  const renderDogCard = (props) => {
+    const id = parseInt(props.match.params.id);
+    const dogCard = dogs.find((dog) => {
+      return dog.id === id;
+    });
+    return <DogCard DogCard={dogCard} />;
+  };
+
   return (
-    <>
-      <header className="header">
-        <div>
-          <img className="header__logo" src={logo} alt="logo waggin" />
-        </div>
-      </header>
-      <section className="main__filters">
-        <Filter
-          className="filters"
-          handleFilter={handleFilter}
-          handleReset={handleReset}
-          breed={breed}
-          community={community}
-        />
-      </section>
-      <DogList dogs={dogs} />
-    </>
+    <Switch>
+      <Route exact path="/" component={renderLanding} />
+      <Route path="/dog/" render={renderSearch} />
+      <Route path="/dog/:id" render={renderDogCard} />
+    </Switch>
   );
 };
 
