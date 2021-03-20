@@ -39,7 +39,7 @@ const DogList = (props) => {
         )}
         {index < props.dogs.length ? (
           <button className="buttons__sig" onClick={handleClickSig}>
-            <img className="buttons__arrow" src={left} alt="go right" />
+            <img className="buttons__arrow" src={left} alt="go ight" />
           </button>
         ) : (
           <button className="buttons__sig--empty">

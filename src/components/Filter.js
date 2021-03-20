@@ -23,7 +23,9 @@ const Filter = (props) => {
         community={props.community}
         handleReset={props.handleReset}
       />
-      <span onClick={handleReset} className="reset icon fas fa-times"></span>
+      <span onClick={handleReset} className="reset">
+        <i class="fa fa-repeat" aria-hidden="true"></i>
+      </span>
     </div>
   );
 };

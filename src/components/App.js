@@ -51,7 +51,7 @@ const App = () => {
             community={community}
           />
           <Link className="link__search" to="/dog/">
-            <li className=""> Buscar </li>
+            <p className="link__search--button"> Buscar </p>
           </Link>
         </section>
       </>

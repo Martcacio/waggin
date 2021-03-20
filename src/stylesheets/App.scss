@@ -12,5 +12,25 @@
 
 .main__filters {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.link {
+    &__search {
+        text-decoration: none;
+        color: white;
+        font-family: $roboto;
+        &--button {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 40px;
+            background-color: $brandColor-1;
+            border-radius: 25px;
+        }
+    }
 }
