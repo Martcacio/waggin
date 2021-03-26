@@ -2,10 +2,6 @@ import Dog from "./Dog";
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import "../stylesheets/layouts/DogList.scss";
-import noright from "../images/arrowleft.png";
-import noleft from "../images/arrowright.png";
-import right from "../images/arrowL.png";
-import left from "../images/arrowR.png";
 import logo from "../images/logo-w.png";
 
 const DogList = (props) => {

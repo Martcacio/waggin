@@ -13,11 +13,13 @@ const Dog = (props) => {
 
   return (
     <article className="article">
-      <img
-        className="article__image"
-        src={props.dogs.url}
-        alt={props.dogs.name}
-      />
+      <div className="article__containerImg">
+        <img
+          className="article__image"
+          src={props.dogs.url}
+          alt={props.dogs.name}
+        />
+      </div>
       <div className="underPhoto">
         <div className="nameGender">
           <p className="nameGender__name"> {props.dogs.name} </p>
