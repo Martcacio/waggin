@@ -25,9 +25,9 @@ const DogList = (props) => {
         </div>
         <div className="header__others">
           <Link className="link__search" to="/">
-            <i class="header__others--search fas fa-search"></i>
+            <i class="header__dogList--search fas fa-search"></i>
           </Link>
-          <i class="header__others--bone fas fa-bone"></i>
+          <i class="header__dogList--bone fas fa-bone"></i>
         </div>
       </header>
       <main className="dogContainer">
@@ -36,12 +36,25 @@ const DogList = (props) => {
         </li>
       </main>
       <div className="buttons">
-        <button className="buttons__no" onClick={handleClickSig}>
-          <i class="buttons__no--cross fas fa-times"></i>
-        </button>
-        <button className="buttons__fav" onClick={handleClickSig}>
-          <i class="buttons__fav--bone fas fa-bone"></i>
-        </button>
+        <div className="prevButton">
+          {index > 0 ? (
+            <button className="buttons__prev" onClick={handleClickPrev}>
+              <i class="fas fa-arrow-left" alt="go left"></i>
+            </button>
+          ) : (
+            <button className="buttons__prev--empty">
+              <i class="fas fa-arrow-left" alt="cant go left"></i>
+            </button>
+          )}
+        </div>
+        <div className="mainButtons">
+          <button className="buttons__no" onClick={handleClickSig}>
+            <i class="buttons__no--cross fas fa-times"></i>
+          </button>
+          <button className="buttons__fav" onClick={handleClickSig}>
+            <i class="buttons__fav--bone fas fa-bone"></i>
+          </button>
+        </div>
       </div>
       {/*  <div className="buttons">
         {index > 0 ? (
