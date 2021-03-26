@@ -1,11 +1,12 @@
 import Dog from "./Dog";
+import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import "../stylesheets/layouts/DogList.scss";
 import noright from "../images/arrowleft.png";
 import noleft from "../images/arrowright.png";
 import right from "../images/arrowL.png";
 import left from "../images/arrowR.png";
-import logo from "../images/logo.png";
+import logo from "../images/logo-w.png";
 
 const DogList = (props) => {
   const handleClickPrev = () => {
@@ -15,11 +16,18 @@ const DogList = (props) => {
     setIndex(index + 1);
   };
   const [index, setIndex] = useState(0);
+  console.log(props.dogs.length, index);
   return (
     <>
       <header className="header">
-        <div>
+        <div className="logo">
           <img className="header__logo" src={logo} alt="logo waggin" />
+        </div>
+        <div className="header__others">
+          <Link className="link__search" to="/">
+            <i class="header__others--search fas fa-search"></i>
+          </Link>
+          <i class="header__others--bone fas fa-bone"></i>
         </div>
       </header>
       <main className="dogContainer">
@@ -28,6 +36,14 @@ const DogList = (props) => {
         </li>
       </main>
       <div className="buttons">
+        <button className="buttons__no" onClick={handleClickSig}>
+          <i class="buttons__no--cross fas fa-times"></i>
+        </button>
+        <button className="buttons__fav" onClick={handleClickSig}>
+          <i class="buttons__fav--bone fas fa-bone"></i>
+        </button>
+      </div>
+      {/*  <div className="buttons">
         {index > 0 ? (
           <button className="buttons__prev" onClick={handleClickPrev}>
             <img className="buttons__arrow" src={right} alt="go left" />
@@ -37,7 +53,7 @@ const DogList = (props) => {
             <img className="buttons__arrow" src={noright} alt="cant go left" />
           </button>
         )}
-        {index < props.dogs.length ? (
+        {index + 1 < props.dogs.length ? (
           <button className="buttons__sig" onClick={handleClickSig}>
             <img className="buttons__arrow" src={left} alt="go ight" />
           </button>
@@ -46,7 +62,7 @@ const DogList = (props) => {
             <img className="buttons__arrow" src={noleft} alt="cant go right" />
           </button>
         )}
-      </div>
+      </div> */}
     </>
   );
 };

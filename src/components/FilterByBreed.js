@@ -6,7 +6,7 @@ const FilterByBreed = (props) => {
   return (
     <form className="">
       <label className="breed__name" htmlFor="name">
-        Raza
+        Filtrar por raza
       </label>
       <select
         className="breed__select"

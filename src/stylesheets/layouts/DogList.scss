@@ -52,46 +52,34 @@
     &__arrow {
         width: 80px;
     }
-    &__prev {
+    &__fav {
         width: 100px;
         height: 100px;
-        background-color: $brandColor-3;
+        background-color: white;
         border: none;
         border-radius: 75px;
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: -1px 0px 15px -5px #003C5E;
-        &--empty {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100px;
-            height: 100px;
-            border: 2px;
-            border-radius: 75px;
+        box-shadow: 5px 9px 15px -4px rgba(173, 173, 173, 0.9);
+        &--bone {
+            font-size: 40px;
+            color: $brandColor-1;
         }
     }
-    &__sig {
+    &__no {
         width: 100px;
         height: 100px;
-        border: 7px, solid, $brandColor-4;
-        background-color: $brandColor-3;
+        background-color: white;
         border-radius: 75px;
         border: none;
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: -1px 0px 15px -5px #003C5E;
-        &--empty {
-            transform: translate(10px, 40px);
-            width: 100px;
-            height: 100px;
-            border: 2px;
-            border-radius: 75px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        box-shadow: 5px 9px 15px -4px rgba(173, 173, 173, 0.9);
+        &--cross {
+            font-size: 40px;
+            color: red;
         }
     }
 }

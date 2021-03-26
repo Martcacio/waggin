@@ -6,7 +6,7 @@ const FilterByCommunity = (props) => {
   return (
     <form className="community">
       <label className="community__name" htmlFor="name">
-        Comunidad
+        Filtrar por comunidad
       </label>
       <select
         className="community__select"

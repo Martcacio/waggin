@@ -5,7 +5,7 @@ import DogCard from "./DogCard";
 import Filter from "./Filter";
 import data from "../data/data.json";
 import { Route, Switch } from "react-router-dom";
-import logo from "../images/logo.png";
+import logo from "../images/logo-w.png";
 import "../stylesheets/App.scss";
 
 const App = () => {
@@ -38,8 +38,14 @@ const App = () => {
     return (
       <>
         <header className="header">
-          <div>
+          <div className="logo">
             <img className="header__logo" src={logo} alt="logo waggin" />
+          </div>
+          <div className="header__others">
+            <Link className="link__search" to="/">
+              <i class="header__others--search fas fa-search"></i>
+            </Link>
+            <i class="header__others--bone fas fa-bone"></i>
           </div>
         </header>
         <section className="main__filters">
@@ -67,14 +73,14 @@ const App = () => {
     const dogCard = dogs.find((dog) => {
       return dog.id === id;
     });
-    return <DogCard DogCard={dogCard} />;
+    return <DogCard dogCard={dogCard} />;
   };
 
   return (
     <Switch>
       <Route exact path="/" component={renderLanding} />
-      <Route path="/dog/" render={renderSearch} />
       <Route path="/dog/:id" render={renderDogCard} />
+      <Route path="/dog" render={renderSearch} />
     </Switch>
   );
 };

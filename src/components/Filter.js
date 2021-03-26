@@ -12,6 +12,10 @@ const Filter = (props) => {
 
   return (
     <div className="filter-container">
+      <span onClick={handleReset} className="reset">
+        <i class="reset__icon fa fa-repeat" aria-hidden="true"></i>
+      </span>
+
       <FilterByBreed
         handleFilter={props.handleFilter}
         breed={props.breed}
@@ -23,9 +27,6 @@ const Filter = (props) => {
         community={props.community}
         handleReset={props.handleReset}
       />
-      <span onClick={handleReset} className="reset">
-        <i class="fa fa-repeat" aria-hidden="true"></i>
-      </span>
     </div>
   );
 };
