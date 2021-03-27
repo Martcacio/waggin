@@ -4,10 +4,10 @@
         "age": "2 años",
         "name": "Zeus",
         "gender": "Macho",
-        "breed": [
+        "breeds": [
             "Mastín"
         ],
-        "personality": [
+        "personalities": [
             "juguetón",
             "tranquilo",
             "equilibrado"
@@ -23,11 +23,11 @@
         "age": "5 años",
         "name": "Yeiko",
         "gender": "Macho",
-        "breed": [
+        "breeds": [
             "Pastor Alemán",
             "Mix"
         ],
-        "personality": [
+        "personalities": [
             "cariñoso"
         ],
         "description": "Tras el fallecimiento de la persona que vivía en el terreno donde rescatábamos animales habitualmente, ahora todos los animales que tenía allí se han quedado sin hogar. Es positivo en Lehismanía pero está en tratamiento, es bueno con otros perros y con niños ",
@@ -41,11 +41,11 @@
         "age": "3 años",
         "name": "Nerón",
         "gender": "Macho",
-        "breed": [
+        "breeds": [
             "Cocker Spaniel",
             "Mix"
         ],
-        "personality": [
+        "personalities": [
             "cariñoso",
             "jugueton",
             "dormilón"
@@ -61,10 +61,10 @@
         "age": "9 años",
         "name": "Romeo",
         "gender": "Macho",
-        "breed": [
+        "breeds": [
             "Pitbull"
         ],
-        "personality": [
+        "personalities": [
             "protector",
             "independiente",
             "cariñoso",
@@ -81,10 +81,10 @@
         "age": "1 año",
         "name": "Lia",
         "gender": "Hembra",
-        "breed": [
+        "breeds": [
             "mix"
         ],
-        "personality": [
+        "personalities": [
             "bueno con otros perros",
             "bueno con niños",
             "a veces ladro",
@@ -101,10 +101,10 @@
         "age": "9 años",
         "name": "Pipo",
         "gender": "Macho",
-        "breed": [
+        "breeds": [
             "mix"
         ],
-        "personality": [
+        "personalities": [
             "bueno con otros perros",
             "bueno con niños",
             "a veces ladro",
@@ -122,10 +122,10 @@
         "age": "8 años",
         "name": "Sota",
         "gender": "Macho",
-        "breed": [
+        "breeds": [
             "mix"
         ],
-        "personality": [
+        "personalities": [
             "bueno con otros perros",
             "bueno con niños",
             "cariñoso"
@@ -141,10 +141,10 @@
         "age": "4 años",
         "name": "Keto",
         "gender": "Macho",
-        "breed": [
+        "breeds": [
             "Galgo"
         ],
-        "personality": [
+        "personalities": [
             "bueno con otros perros",
             "bueno con niños",
             "cariñoso"
@@ -160,10 +160,10 @@
         "age": "6 años",
         "name": "Jazz",
         "gender": "Macho",
-        "breed": [
+        "breeds": [
             "Pitbull"
         ],
-        "personality": [
+        "personalities": [
             "bueno solo con hembras",
             "bueno con niños",
             "cariñoso"
@@ -179,10 +179,10 @@
         "age": "5 años",
         "name": "Rosseta",
         "gender": "Hembra",
-        "breed": [
+        "breeds": [
             "Pitbull"
         ],
-        "personality": [
+        "personalities": [
             "bueno con animales",
             "bueno con niños",
             "cariñoso",
@@ -199,10 +199,10 @@
         "age": "11 años",
         "name": "Noa",
         "gender": "Hembra",
-        "breed": [
+        "breeds": [
             "Fox Terrier"
         ],
-        "personality": [
+        "personalities": [
             "bueno con machos",
             "bueno con niños",
             "no ladro",
@@ -220,11 +220,11 @@
         "age": "3 años",
         "name": "Ironman",
         "gender": "Macho",
-        "breed": [
+        "breeds": [
             "Mix",
             "Pitbull"
         ],
-        "personality": [
+        "personalities": [
             "bueno con perros",
             "no ladro",
             "cariñoso",

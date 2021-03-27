@@ -27,12 +27,6 @@
     }
 }
 
-
-/* .nameGenderDC-container {
-    display: flex;
-    flex-direction: row;
-} */
-
 .nameGenderDC {
     display: flex;
     flex-direction: row;
@@ -40,7 +34,7 @@
     &__name {
         font-family: $brandFont;
         font-size: 30px;
-        color: $brandColor-4;
+        color: $brandColor-5;
     }
     &__gender {
         font-size: 30px;
@@ -58,14 +52,65 @@
     }
 }
 
+.title {
+    font-family: $roboto;
+    font-size: 20px;
+}
+
 .dogCard {
     &__breed {
-        background-color: yellow;
-        font-family: $brandFont;
+        display: flex;
+        flex-direction: row;
+        font-family: $roboto;
+        margin-bottom: 10px;
+        &--breed {
+            padding: 7px;
+            margin-right: 10px;
+            border-radius: 50px;
+            border: solid 1px $brandColor-8;
+            color: $brandColor-8;
+        }
+    }
+    &__community {
+        color: $brandColor-8;
+        font-family: $roboto;
+        margin-bottom: 20px;
+    }
+    &__community-icon {
+        color: $brandColor-8;
+        font-size: 12px;
+        margin-right: 7px;
+    }
+    &__age {
+        font-weight: 600;
+        font-family: $roboto;
+        color: $brandColor-5;
+        margin-bottom: 10px;
+    }
+    &__description {
+        font-family: $roboto;
+        margin-bottom: 10px;
+    }
+    &__personality {
+        margin-top: 5px;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        font-family: $roboto;
+        &--personality {
+            padding: 7px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border-radius: 50px;
+            border: solid 1px $brandColor-8;
+            color: $brandColor-8;
+        }
     }
 }
 
 .asociation {
+    margin-top: 20px;
+    margin-bottom: 60px;
     width: 100%;
     height: 40px;
     background-color: white;

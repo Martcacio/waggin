@@ -11,6 +11,27 @@ const DogCard = (props) => {
   } else {
     genderColor = "blue";
   }
+  const dogBreed = props.dogCard.breeds.map((breed, index) => {
+    return (
+      <li key={index} breed="breeds" className="dogCard__breed--breed">
+        {breed}
+      </li>
+    );
+  });
+
+  const dogPersonality = props.dogCard.personalities.map(
+    (personality, index) => {
+      return (
+        <li
+          key={index}
+          personality="personalities"
+          className="dogCard__personality--personality"
+        >
+          {personality}
+        </li>
+      );
+    }
+  );
   return (
     <>
       <header className="header">
@@ -51,18 +72,17 @@ const DogCard = (props) => {
                 <i class="fav__bone fas fa-bone"></i>
               </div>
             </div>
-            <p className="dogCard__breed"> {props.dogCard.breed} </p>
-
             <p className="dogCard__community">
-              <i class="fas fa-map-marker-alt"></i>
+              <i className="dogCard__community-icon fas fa-map-marker-alt"></i>
               {props.dogCard.community}
             </p>
+            <p className="dogCard__breed"> {dogBreed} </p>
 
             <p className="dogCard__age"> {props.dogCard.age} </p>
-
+            <p className="title">Historia:</p>
             <p className="dogCard__description">{props.dogCard.description}</p>
 
-            <p className="dogCard__personality">{props.dogCard.personality}</p>
+            <p className="dogCard__personality">{dogPersonality}</p>
             <button className="asociation">
               <p className="dogCard__asociation">{props.dogCard.asociation} </p>
             </button>
