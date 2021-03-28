@@ -24,7 +24,9 @@ const DogList = (props) => {
           <Link className="link__search" to="/">
             <i class="header__dogList--search fas fa-search"></i>
           </Link>
-          <i class="header__dogList--bone fas fa-bone"></i>
+          <Link className="link__search" to="/Favs">
+            <i class="header__dogList--bone fas fa-bone"></i>
+          </Link>
         </div>
       </header>
       <main className="dogContainer">

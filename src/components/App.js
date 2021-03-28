@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import DogList from "./DogList";
 import DogCard from "./DogCard";
 import None from "./None";
+import Favs from "./Favs";
 import Filter from "./Filter";
 import data from "../data/data.json";
 import { Route, Switch } from "react-router-dom";
@@ -46,7 +47,9 @@ const App = () => {
             <Link className="link__search" to="/">
               <i class="header__others--search fas fa-search"></i>
             </Link>
-            <i class="header__others--bone fas fa-bone"></i>
+            <Link className="link__search" to="/Favs">
+              <i class="header__others--bone fas fa-bone"></i>
+            </Link>
           </div>
         </header>
         <section className="main__filters">
@@ -69,6 +72,10 @@ const App = () => {
     return <None />;
   };
 
+  const renderFavs = () => {
+    return <Favs />;
+  };
+
   const renderSearch = (props) => {
     return <DogList dogs={filterDogs} />;
   };
@@ -87,6 +94,7 @@ const App = () => {
       <Route path="/dog/:id" render={renderDogCard} />
       <Route path="/dog" render={renderSearch} />
       <Route path="/None" render={renderNone} />
+      <Route path="/Favs" render={renderFavs} />
     </Switch>
   );
 };

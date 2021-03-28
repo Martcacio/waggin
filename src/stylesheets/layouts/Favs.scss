@@ -1,0 +1,14 @@
+@import '../core/variables.scss';
+.header {
+    &__dogFav {
+        &--bone {
+            font-size: 20px;
+            margin-left: 10px;
+            color: $brandColor-1;
+        }
+        &--search {
+            font-size: 20px;
+            color: $brandColor-8;
+        }
+    }
+}
