@@ -10,28 +10,6 @@ const Dog = (props) => {
   } else {
     genderColor = "blue";
   }
-  /* if (props.dogs === undefined) {
-    return (
-      <>
-        <header className="header">
-          <div className="logo">
-            <img className="header__logo" src={logo} alt="logo waggin" />
-          </div>
-          <div className="header__others">
-            <Link className="link__search" to="/">
-              <i class="header__dogCard--search fas fa-search"></i>
-            </Link>
-            <i class="header__dogCard--bone fas fa-bone"></i>
-          </div>
-        </header>
-        <p>
-          Lo sentimos, actualmente no tenemos ningún perro con las
-          características seleccionadas. Estamos trabajando para poder mostrar
-          perros de todas las razas y comunidades posibles.
-        </p>
-      </>
-    );
-  } else {  */
   return (
     <article className="article">
       <div className="article__containerImg">
