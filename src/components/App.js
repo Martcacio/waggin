@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import DogList from "./DogList";
 import DogCard from "./DogCard";
+import None from "./None";
 import Filter from "./Filter";
 import data from "../data/data.json";
 import { Route, Switch } from "react-router-dom";
@@ -10,7 +11,7 @@ import "../stylesheets/App.scss";
 
 const App = () => {
   const [dogs, setDogs] = useState(data);
-  const [breed, setBreed] = useState("all");
+  const [breeds, setBreed] = useState("all");
   const [community, setCommunity] = useState("all");
 
   const handleFilter = (dataFilter) => {
@@ -28,7 +29,7 @@ const App = () => {
 
   const filterDogs = dogs
     .filter((dogs) => {
-      return breed === "all" ? true : dogs.breed.includes(breed);
+      return breeds === "all" ? true : dogs.breeds.includes(breeds);
     })
     .filter((dogs) => {
       return community === "all" ? true : dogs.community === community;
@@ -53,7 +54,7 @@ const App = () => {
             className="filters"
             handleFilter={handleFilter}
             handleReset={handleReset}
-            breed={breed}
+            breed={breeds}
             community={community}
           />
           <Link className="link__search" to="/dog/">
@@ -62,6 +63,10 @@ const App = () => {
         </section>
       </>
     );
+  };
+
+  const renderNone = (props) => {
+    return <None />;
   };
 
   const renderSearch = (props) => {
@@ -81,6 +86,7 @@ const App = () => {
       <Route exact path="/" component={renderLanding} />
       <Route path="/dog/:id" render={renderDogCard} />
       <Route path="/dog" render={renderSearch} />
+      <Route path="/None" render={renderNone} />
     </Switch>
   );
 };
