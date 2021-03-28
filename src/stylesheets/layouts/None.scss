@@ -1,0 +1,52 @@
+@import '../core/variables.scss';
+.container-ps {
+    padding: 5%;
+    margin: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 9px 15px -4px rgba(173, 173, 173, 0.9);
+    font-family: $roboto;
+    &__logo {
+        width: 200px;
+        margin-bottom: 10px;
+    }
+    &__p1 {
+        margin-bottom: 10px;
+    }
+    &__p2 {
+        margin-bottom: 10px;
+    }
+    &__search {
+        text-decoration: none;
+        color: $brandColor-3;
+        font-family: $roboto;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        width: 100%;
+        border-radius: 23px;
+        box-shadow: 5px 9px 15px -4px rgba(173, 173, 173, 0.9);
+        height: 40px;
+        background-color: white;
+        border: none;
+        &--icon {
+            margin-left: 5px;
+        }
+    }
+    &__favs {
+        text-decoration: none;
+        color: $brandColor-1;
+        font-family: $roboto;
+        font-size: 20px;
+        font-weight: 600;
+        width: 100%;
+        border-radius: 23px;
+        box-shadow: 5px 9px 15px -4px rgba(173, 173, 173, 0.9);
+        height: 40px;
+        background-color: white;
+        border: none;
+        &--icon {
+            margin-left: 5px;
+        }
+    }
+}
