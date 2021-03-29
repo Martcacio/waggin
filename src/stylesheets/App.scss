@@ -29,17 +29,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    padding: 5%;
+    margin: 20px;
+    border-radius: 23px;
+    box-shadow: 5px 9px 15px -4px rgba(173, 173, 173, 0.9);
 }
 
 .link {
     &__search {
         text-decoration: none;
-        color: $brandColor-1;
+        color: $brandColor-3;
         font-family: $roboto;
         font-size: 20px;
         font-weight: 600;
         &--button {
-            margin-top: 20px;
+            margin-top: 10px;
             display: flex;
             justify-content: center;
             align-items: center;

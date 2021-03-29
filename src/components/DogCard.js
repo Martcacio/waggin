@@ -1,10 +1,15 @@
 import { Link } from "react-router-dom";
-import React from "react";
 import logo from "../images/logo-w.png";
 import "../stylesheets/layouts/Dog.scss";
 import "../stylesheets/layouts/DogCard.scss";
+import React, { useState } from "react";
 
 const DogCard = (props) => {
+  const [favs, setFavs] = useState("");
+  const handleFavs = () => {
+    !favs ? setFavs("fav__fav") : setFavs("");
+  };
+
   let genderColor = "";
   if (props.dogCard.gender === "Hembra") {
     genderColor = "pink";
@@ -32,29 +37,6 @@ const DogCard = (props) => {
       );
     }
   );
-
-  /*  if (props.dogCard === undefined) {
-    return (
-      <>
-        <header className="header">
-          <div className="logo">
-            <img className="header__logo" src={logo} alt="logo waggin" />
-          </div>
-          <div className="header__others">
-            <Link className="link__search" to="/">
-              <i class="header__dogCard--search fas fa-search"></i>
-            </Link>
-            <i class="header__dogCard--bone fas fa-bone"></i>
-          </div>
-        </header>
-        <p>
-          Lo sentimos, actualmente no tenemos ningún perro con las
-          características seleccionadas. Estamos trabajando para poder mostrar
-          perros de todas las razas y comunidades posibles.
-        </p>
-      </>
-    );
-  } else { */
   return (
     <>
       <header className="header">
@@ -63,21 +45,21 @@ const DogCard = (props) => {
         </div>
         <div className="header__others">
           <Link className="link__search" to="/">
-            <i class="header__dogCard--search fas fa-search"></i>
+            <i className="header__dogCard--search fas fa-search"></i>
           </Link>
           <Link className="link__search" to="/Favs">
-            <i class="header__dogCard--bone fas fa-bone"></i>
+            <i className="header__dogCard--bone fas fa-bone"></i>
           </Link>
         </div>
       </header>
       <main className="dogContainer">
-        <article className="article">
+        <article className="articleDC">
           <img
             className="articleDC__image"
             src={props.dogCard.url}
             alt={props.dogCard.name}
           />
-          <div className="underPhoto">
+          <div className="underPhotoDC">
             <div className="nameGenderDC">
               <div className="nameGenderDC-container">
                 <p className="nameGenderDC__name"> {props.dogCard.name} </p>
@@ -94,7 +76,10 @@ const DogCard = (props) => {
                 </div>
               </div>
               <div>
-                <i class="fav__bone fas fa-bone"></i>
+                <i
+                  class={`fas fa-bone fav__bone ${favs}`}
+                  onClick={handleFavs}
+                ></i>
               </div>
             </div>
             <p className="dogCard__community">
@@ -108,15 +93,14 @@ const DogCard = (props) => {
             <p className="dogCard__description">{props.dogCard.description}</p>
 
             <p className="dogCard__personality">{dogPersonality}</p>
-            <button className="asociation">
+            <a className="asociation" href={props.dogCard.link} target="_blank">
               <p className="dogCard__asociation">{props.dogCard.asociation}</p>
-            </button>
+            </a>
           </div>
         </article>
       </main>
     </>
   );
 };
-/* }; */
 
 export default DogCard;

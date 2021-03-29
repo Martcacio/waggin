@@ -26,10 +26,10 @@ const None = (props) => {
           Lo sentimos, actualmente no tenemos más perros con las características
           seleccionadas.
         </p>
-        <p className="container-ps__p2">
+        {/*  <p className="container-ps__p2">
           Estamos trabajando para poder mostrar perros de todas las razas y
           comunidades posibles.
-        </p>
+        </p> */}
         <Link className="link__search" to="/">
           <button className="container-ps__search">
             <p>

@@ -17,7 +17,6 @@
 .articleDC {
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
     &__containerImg {
         height: 500px;
         background-color: $brandColor-8;
@@ -49,6 +48,9 @@
         margin-top: 10px;
         margin-left: 10px;
         color: #bebebe;
+    }
+    &__fav {
+        color: $brandColor-1;
     }
 }
 
@@ -109,6 +111,7 @@
 }
 
 .asociation {
+    text-decoration: none;
     margin-top: 20px;
     margin-bottom: 60px;
     width: 100%;
@@ -123,5 +126,5 @@
     font-size: 20px;
     font-weight: 600;
     box-shadow: 5px 9px 15px -4px rgba(173, 173, 173, 0.9);
-    color: $brandColor-1;
+    color: $brandColor-4;
 }
