@@ -9,4 +9,4 @@ También tenemos un apartado de favoritos en el que gracias al Local storage se 
 
 
 ### React
-Está creado íntegramente con React y en un principio solo estaría pensado para diseño Mobile.
+El proyecto está creado íntegramente con React y en un principio solo estaría pensado para diseño Mobile.
