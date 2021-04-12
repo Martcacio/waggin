@@ -12,7 +12,11 @@ const Dog = (props) => {
   }
   return (
     <article className="article">
-      <div className="article__containerImg">
+      <div className="article__containerImg"> <img
+          className="article__image--background"
+          src={props.dogs.url}
+          alt={props.dogs.name}
+        />
         <img
           className="article__image"
           src={props.dogs.url}
