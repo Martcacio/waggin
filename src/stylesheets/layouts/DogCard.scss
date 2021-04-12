@@ -1,130 +1,135 @@
 @import '../core/variables.scss';
 @import '../core/reset.scss';
 .header {
-    &__dogCard {
-        &--bone {
-            font-size: 20px;
-            margin-left: 10px;
-            color: $brandColor-8;
-        }
-        &--search {
-            font-size: 20px;
-            color: $brandColor-8;
-        }
+  &__dogCard {
+    &--bone {
+      font-size: 20px;
+      margin-left: 10px;
+      color: $brandColor-8;
     }
+    &--search {
+      font-size: 20px;
+      color: $brandColor-8;
+    }
+  }
 }
 
 .articleDC {
-    display: flex;
-    flex-direction: column;
-    &__containerImg {
-        height: 500px;
-        background-color: $brandColor-8;
-    }
-    &__image {
-        width: 100%;
-    }
+  display: flex;
+  flex-direction: column;
+  &__containerImg {
+    height: 500px;
+    background-color: $brandColor-8;
+  }
+  &__image {
+    width: 100%;
+  }
+}
+
+.nameGenderDC-container {
+  display: flex;
+  flex-direction: row;
 }
 
 .nameGenderDC {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    &__name {
-        font-family: $brandFont;
-        font-size: 30px;
-        color: $brandColor-5;
-    }
-    &__gender {
-        font-size: 30px;
-        margin-top: 10px;
-        margin-left: 10px;
-    }
+  display: flex;
+
+  justify-content: space-between;
+  &__name {
+    font-family: $brandFont;
+    font-size: 30px;
+    color: $brandColor-5;
+  }
+  &__gender {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
 }
 
 .fav {
-    &__bone {
-        font-size: 30px;
-        margin-top: 10px;
-        margin-left: 10px;
-        color: #bebebe;
-    }
-    &__fav {
-        color: $brandColor-1;
-    }
+  &__bone {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #bebebe;
+  }
+  &__fav {
+    color: $brandColor-1;
+  }
 }
 
 .title {
-    font-family: $roboto;
-    font-size: 20px;
+  font-family: $roboto;
+  font-size: 20px;
 }
 
 .dogCard {
-    &__breed {
-        display: flex;
-        flex-direction: row;
-        font-family: $roboto;
-        margin-bottom: 10px;
-        &--breed {
-            padding: 7px;
-            margin-right: 10px;
-            border-radius: 50px;
-            border: solid 1px $brandColor-8;
-            color: $brandColor-8;
-        }
+  &__breed {
+    display: flex;
+    flex-direction: row;
+    font-family: $roboto;
+    margin-bottom: 10px;
+    &--breed {
+      padding: 7px;
+      margin-right: 10px;
+      border-radius: 50px;
+      border: solid 1px $brandColor-8;
+      color: $brandColor-8;
     }
-    &__community {
-        color: $brandColor-8;
-        font-family: $roboto;
-        margin-bottom: 20px;
+  }
+  &__community {
+    color: $brandColor-8;
+    font-family: $roboto;
+    margin-bottom: 20px;
+  }
+  &__community-icon {
+    color: $brandColor-8;
+    font-size: 12px;
+    margin-right: 7px;
+  }
+  &__age {
+    font-weight: 600;
+    font-family: $roboto;
+    color: $brandColor-5;
+    margin-bottom: 10px;
+  }
+  &__description {
+    font-family: $roboto;
+    margin-bottom: 10px;
+  }
+  &__personality {
+    margin-top: 5px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    font-family: $roboto;
+    &--personality {
+      padding: 7px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      border-radius: 50px;
+      border: solid 1px $brandColor-8;
+      color: $brandColor-8;
     }
-    &__community-icon {
-        color: $brandColor-8;
-        font-size: 12px;
-        margin-right: 7px;
-    }
-    &__age {
-        font-weight: 600;
-        font-family: $roboto;
-        color: $brandColor-5;
-        margin-bottom: 10px;
-    }
-    &__description {
-        font-family: $roboto;
-        margin-bottom: 10px;
-    }
-    &__personality {
-        margin-top: 5px;
-        flex-wrap: wrap;
-        display: flex;
-        flex-direction: row;
-        font-family: $roboto;
-        &--personality {
-            padding: 7px;
-            margin-right: 10px;
-            margin-bottom: 10px;
-            border-radius: 50px;
-            border: solid 1px $brandColor-8;
-            color: $brandColor-8;
-        }
-    }
+  }
 }
 
 .asociation {
-    text-decoration: none;
-    margin-top: 20px;
-    margin-bottom: 60px;
-    width: 100%;
-    height: 40px;
-    background-color: white;
-    border: none;
-    border-radius: 75px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: $roboto;
-    font-size: 20px;
-    font-weight: 600;
-    box-shadow: 5px 9px 15px -4px rgba(173, 173, 173, 0.9);
-    color: $brandColor-4;
+  text-decoration: none;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  border: none;
+  border-radius: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $roboto;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: 5px 9px 15px -4px rgba(173, 173, 173, 0.9);
+  color: $brandColor-4;
 }
