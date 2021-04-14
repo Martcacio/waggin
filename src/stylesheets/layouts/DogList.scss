@@ -27,7 +27,7 @@
   flex-direction: column;
   border-radius: 10px;
   &__containerImg {
-    height: 500px;
+    height: 400px;
     background-color: #003c5e8e;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -40,7 +40,7 @@
     position: relative;
     margin: auto;
     &--background {
-      height: 500px;
+      height: 400px;
       width: calc(95%);
       background-color: #003c5e8e;
       border-top-left-radius: 10px;
@@ -71,6 +71,8 @@
   display: flex;
   justify-content: left;
   transform: translate(10px, -50px);
+  position: relative;
+  z-index: 9;
   &__name {
     font-family: $brandFont;
     font-size: 30px;

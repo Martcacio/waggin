@@ -3,6 +3,7 @@ import "../stylesheets/layouts/Favs.scss";
 import { Link } from "react-router-dom";
 import logo from "../images/logo-w.png";
 
+
 const Favs =() => {
   const favDogsStr = localStorage.getItem("favDogs");
   const favDogs = (favDogsStr === null) ? [] : JSON.parse( favDogsStr );
@@ -15,12 +16,23 @@ if (item.gender === "Hembra") {
   genderColor = "blue";
 }
 
-const handleUnFav=()=>{}
 
+
+/*
+const [fav, setFav] = useState(favDogs);
+const handleUnFav = () => {
+  !fav ? setFav("favDogs") : setFav("");*/
+
+
+  /*if (index > -1) {
+      favDogs.splice(props.dogs[index], 1);
+    } else {
+      favDogs.push(props.dogs[index]);
+    }*/
   return (
   <li key={i}  className={item.name}>
   <article className="fav-article">
-  <button className="unfav" onClick={handleUnFav}>
+  <button className="unfav" /*onClick={handleUnFav}*/>
                 <i className="unfav__cross fas fa-times" ></i>
               </button>
       <div className="fav-article__containerImg"> <img
@@ -58,7 +70,7 @@ const handleUnFav=()=>{}
     </article>
     
   </li>
-)});
+)})
 
 
 console.log(favDogs);

@@ -97,7 +97,7 @@ const DogCard = (props) => {
             <p className="dogCard__breed"> {dogBreed} </p>
 
             <p className="dogCard__age"> {props.dogCard.age} </p>
-            <p className="title">Historia:</p>
+            <p className="history">Historia:</p>
             <p className="dogCard__description">{props.dogCard.description}</p>
 
             <p className="dogCard__personality">{dogPersonality}</p>

@@ -195,27 +195,6 @@
     },
     {
         "id": 11,
-        "community": "Aragón",
-        "age": "11 años",
-        "name": "Noa",
-        "gender": "Hembra",
-        "breeds": [
-            "Fox Terrier"
-        ],
-        "personalities": [
-            "bueno con machos",
-            "bueno con niños",
-            "no ladro",
-            "cariñoso",
-            "juguetona"
-        ],
-        "description": "Noa es procedente de un criadero el cual quería sacrificarla al ver que nació con malformaciones. Una mujer se apiadó de ella y se la quedó. Noa no salía a la calle y por tanto no sociabilizó con perros. La persona que se quedó a Noa se hizo mayor y se quedó sola por lo que acabo en la familia Adala. Noa es una Fox Terrier de 11 años y tamaño pequeño. Con personas es un amor pero con otros perros no puede convivir ya que no está sociabilizada. A pesar de ello, se está trabajando con ella y en la calle no muestra problemas con estos. No es apta con gatos. Busca adopción en Zaragoza o el resto de Aragón (no se envía) Anímate a conocerla! 😉 Se merece pasar sus últimos años en una familia definitiva que le dé el cariño que tanto le ha faltado.",
-        "url": "https://img.miwuki.com/a/W2TZCC",
-        "asociation": "Adala Zaragoza",
-        "link": "https://www.facebook.com/adalazaragoza/"
-    },
-    {
-        "id": 12,
         "community": "Castilla la Mancha",
         "age": "3 años",
         "name": "Ironman",
@@ -236,7 +215,7 @@
         "link": "https://www.doghorsecity.org/"
     },
     {
-        "id": 13,
+        "id": 12,
         "community": "Cataluña",
         "age": "6 años",
         "name": "Iris",
@@ -256,7 +235,7 @@
         "link": "https://amancu.protecms.com/"
     },
     {
-        "id": 14,
+        "id": 13,
         "community": "Cataluña",
         "age": "6 años",
         "name": "Lincoln",
@@ -278,7 +257,7 @@
         "link": "https://amancu.protecms.com/"
     },
     {
-        "id": 15,
+        "id": 14,
         "community": "Cataluña",
         "age": "6 años",
         "name": "Trueno",
@@ -296,7 +275,7 @@
         "link": "http://spac.cat/"
     },
     {
-        "id": 16,
+        "id": 15,
         "community": "Cataluña",
         "age": "5 años",
         "name": "N",

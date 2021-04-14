@@ -22,15 +22,8 @@ const DogList = (props) => {
 
     favDogs.push( props.dogs[ index ] );
 
-    /*if (index > -1) {
-      favDogs.splice(index, 1);
-    } else {
-      favDogs.push(props.dogs);
-    }*/
-
 
     localStorage.setItem( "favDogs", JSON.stringify(favDogs) );
-
     setIndex(index + 1);
   };
 
