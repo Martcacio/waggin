@@ -7,6 +7,7 @@ import logo from "../images/logo-w.png";
 const Favs =() => {
   const favDogsStr = localStorage.getItem("favDogs");
   const favDogs = (favDogsStr === null) ? [] : JSON.parse( favDogsStr );
+  const [fav, setFav] = useState(favDogs);
 
 const favDog = favDogs.map((item, i) => {
   let genderColor = "";
@@ -16,7 +17,14 @@ if (item.gender === "Hembra") {
   genderColor = "blue";
 }
 
-
+function handleUnFav(i){
+  const favList = fav.filter((item)=> item.i !== i);
+  setFav(favList);
+  console.log("CLICK");
+  if (favList) {
+    favList.splice(i,1);
+  }
+}
 
 /*
 const [fav, setFav] = useState(favDogs);
@@ -32,7 +40,7 @@ const handleUnFav = () => {
   return (
   <li key={i}  className={item.name}>
   <article className="fav-article">
-  <button className="unfav" /*onClick={handleUnFav}*/>
+  <button className="unfav" onClick={handleUnFav}>
                 <i className="unfav__cross fas fa-times" ></i>
               </button>
       <div className="fav-article__containerImg"> <img

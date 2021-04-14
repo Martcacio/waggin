@@ -101,7 +101,7 @@ const DogCard = (props) => {
             <p className="dogCard__description">{props.dogCard.description}</p>
 
             <p className="dogCard__personality">{dogPersonality}</p>
-            <a className="asociation" href={props.dogCard.link} target="_blank">
+            <a className="asociation" href={props.dogCard.link} target="_blank" rel="noreferrer">
               <p className="dogCard__asociation">{props.dogCard.asociation}</p>
             </a>
           </div>

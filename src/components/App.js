@@ -8,6 +8,7 @@ import Filter from "./Filter";
 import data from "../data/data.json";
 import { Route, Switch } from "react-router-dom";
 import logo from "../images/logo-w.png";
+import logowide from "../images/logo.png";
 import "../stylesheets/App.scss";
 
 const App = () => {
@@ -52,6 +53,20 @@ const App = () => {
             </Link>
           </div>
         </header>
+        <header className="header2">
+          <div className="logowide">
+            <img className="header2__logo" src={logowide} alt="logo waggin" />
+          </div>
+          <div className="header2__others">
+            <Link className="link__search" to="/">
+              <i className="header2__others--search fas fa-search"></i>
+            </Link>
+            <Link className="link__search" to="/Favs">
+              <i className="header2__others--bone fas fa-bone"></i>
+            </Link>
+          </div>
+        </header>
+        <section className="welcome">Adopta a tu mascota ideal con Waggin</section>
         <section className="main__filters">
           <Filter
             className="filters"

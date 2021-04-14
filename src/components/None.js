@@ -13,10 +13,10 @@ const None = (props) => {
         </div>
         <div className="header__others">
           <Link className="link__search" to="/">
-            <i class="header__dogList--search fas fa-search"></i>
+            <i className="header__dogList--search fas fa-search"></i>
           </Link>
           <Link className="link__search" to="/Favs">
-            <i class="header__dogList--bone fas fa-bone"></i>
+            <i className="header__dogList--bone fas fa-bone"></i>
           </Link>
         </div>
       </header>
@@ -34,7 +34,7 @@ const None = (props) => {
           <button className="container-ps__search">
             <p>
               Actualizar la búsqueda
-              <i class="container-ps__search--icon fas fa-search"></i>
+              <i className="container-ps__search--icon fas fa-search"></i>
             </p>
           </button>
         </Link>
@@ -42,7 +42,7 @@ const None = (props) => {
           <button className="container-ps__favs">
             <p>
               Acceder a Favoritos
-              <i class="container-ps__favs--icon fas fa-bone"></i>
+              <i className="container-ps__favs--icon fas fa-bone"></i>
             </p>
           </button>
         </Link>

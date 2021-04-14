@@ -14,6 +14,35 @@
   }
 }
 
+.header2 {
+  display: none;
+  @media all and (min-width: 768px) {
+    display: flex;
+    box-shadow: 3px 5px 5px -4px rgba(173, 173, 173, 0.9);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-left: 20px;
+    width: 200px;
+  }
+  &__others {
+    margin-right: 20px;
+    &--bone {
+      font-size: 40px;
+      margin-left: 30px;
+      color: $brandColor-8;
+    }
+    &--search {
+      font-size: 40px;
+      color: $brandColor-3;
+    }
+  }
+}
+
 .dogContainer {
   margin: 10px;
   display: flex;
@@ -33,12 +62,20 @@
     border-top-right-radius: 10px;
     display: flex;
     justify-content: center;
+    @media all and (min-width: 768px) {
+      width: 50%;
+    }
   }
   &__image {
+    max-height: 400px;
     width: 100%;
-    z-index: 1;
+    z-index: 0;
     position: relative;
     margin: auto;
+    @media all and (min-width: 1024px) {
+      max-height: 700px;
+      width: 100%;
+    }
     &--background {
       height: 400px;
       width: calc(95%);
@@ -48,6 +85,9 @@
       position: absolute;
       filter: blur(6px);
       z-index: 0;
+      @media all and (min-width: 768px) {
+        width: 50%;
+      }
     }
   }
   &__button {
@@ -64,6 +104,29 @@
     box-shadow: 5px 9px 15px -4px rgba(173, 173, 173, 0.9);
     border: none;
     border-radius: 25px;
+    @media all and (min-width: 768px) {
+      width: 50%;
+    }
+  }
+}
+
+.asideMain {
+  @media all and (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 30%, 70%;
+    grid-template-areas: 'aside main';
+  }
+}
+.aside {
+  display: none;
+  @media all and (min-width: 1024px) {
+    display: flex;
+    grid-column: 'aside';
+  }
+}
+.main {
+  @media all and (min-width: 1024px) {
+    grid-column: 'main';
   }
 }
 
@@ -100,6 +163,9 @@
   margin-left: 20px;
   margin-right: 20px;
   transform: translateY(-60px);
+  @media all and (min-width: 768px) {
+    width: 50%;
+  }
   &__arrow {
     width: 50px;
   }

@@ -1,7 +1,9 @@
 import Dog from "./Dog";
+import FavsAside from "./FavsAside";
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import "../stylesheets/layouts/DogList.scss";
+import "../stylesheets/layouts/FavsAside.scss";
 import logo from "../images/logo-w.png";
 import logowide from "../images/logo.png";
 
@@ -20,7 +22,7 @@ const DogList = (props) => {
     const favDogsStr = localStorage.getItem("favDogs");
     const favDogs = (favDogsStr === null) ? [] : JSON.parse( favDogsStr );
 
-    favDogs.push( props.dogs[ index ] );
+    favDogs.push(props.dogs[index]);
 
 
     localStorage.setItem( "favDogs", JSON.stringify(favDogs) );
@@ -37,10 +39,23 @@ const DogList = (props) => {
           </div>
           <div className="header__others">
             <Link className="link__search" to="/">
-              <i class="header__dogList--search fas fa-search"></i>
+              <i className="header__dogList--search fas fa-search"></i>
             </Link>
             <Link className="link__search" to="/Favs">
-              <i class="header__dogList--bone fas fa-bone"></i>
+              <i className="header__dogList--bone fas fa-bone"></i>
+            </Link>
+          </div>
+        </header>
+        <header className="header2">
+          <div className="logowide">
+            <img className="header2__logo" src={logowide} alt="logo waggin" />
+          </div>
+          <div className="header2__others">
+            <Link className="link__search" to="/">
+              <i className="header2__others--search fas fa-search"></i>
+            </Link>
+            <Link className="link__search" to="/Favs">
+              <i className="header2__others--bone fas fa-bone"></i>
             </Link>
           </div>
         </header>
@@ -58,7 +73,7 @@ const DogList = (props) => {
             <button className="container-ps__search">
               <p>
                 Cambiar la búsqueda
-                <i class="container-ps__search--icon fas fa-search"></i>
+                <i className="container-ps__search--icon fas fa-search"></i>
               </p>
             </button>
           </Link>
@@ -74,13 +89,29 @@ const DogList = (props) => {
           </div>
           <div className="header__others">
             <Link className="link__search" to="/">
-              <i class="header__dogList--search fas fa-search"></i>
+              <i className="header__dogList--search fas fa-search"></i>
             </Link>
             <Link className="link__search" to="/Favs">
-              <i class="header__dogList--bone fas fa-bone"></i>
+              <i className="header__dogList--bone fas fa-bone"></i>
             </Link>
           </div>
         </header>
+        <header className="header2">
+          <div className="logowide">
+            <img className="header2__logo" src={logowide} alt="logo waggin" />
+          </div>
+          <div className="header2__others">
+            <Link className="link__search" to="/">
+              <i className="header2__others--search fas fa-search"></i>
+            </Link>
+            <Link className="link__search" to="/Favs">
+              <i className="header2__others--bone fas fa-bone"></i>
+            </Link>
+          </div>
+        </header>
+        <section className="asideMain">
+           <FavsAside className="aside"/>
+        <section className="main">
         <main className="dogContainer">
           <li key={props.dogs.id} className="dogList">
             <Dog dogs={props.dogs[index]} />
@@ -90,11 +121,11 @@ const DogList = (props) => {
           <div className="prevButton">
             {index > 0 ? (
               <button className="buttons__prev" onClick={handleClickPrev}>
-                <i class="fas fa-arrow-left" alt="go left"></i>
+                <i className="fas fa-arrow-left" alt="go left"></i>
               </button>
             ) : (
               <button className="buttons__prev--empty">
-                <i class="fas fa-arrow-left" alt="cant go left"></i>
+                <i className="fas fa-arrow-left" alt="cant go left"></i>
               </button>
             )}
           </div>
@@ -110,7 +141,6 @@ const DogList = (props) => {
                 </button>
               </Link>
             )}
-
             {index + 1 < props.dogs.length ? (
               <button className="buttons__fav" onClick={handleFav}>
                 <i className="buttons__fav--bone fas fa-bone"></i>
@@ -124,6 +154,8 @@ const DogList = (props) => {
             )}
           </div>
         </div>
+        </section>
+        </section>
       </>
     );
   }

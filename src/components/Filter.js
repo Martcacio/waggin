@@ -13,7 +13,7 @@ const Filter = (props) => {
   return (
     <div className="filter-container">
       <span onClick={handleReset} className="reset">
-        <i class="reset__icon fa fa-repeat" aria-hidden="true"></i>
+        <i className="reset__icon fa fa-repeat" aria-hidden="true"></i>
       </span>
 
       <FilterByBreed
