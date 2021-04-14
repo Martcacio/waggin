@@ -47,6 +47,6 @@ const Dog = (props) => {
     </article>
   );
 };
-/* }; */
+
 
 export default Dog;

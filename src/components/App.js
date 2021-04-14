@@ -45,10 +45,10 @@ const App = () => {
           </div>
           <div className="header__others">
             <Link className="link__search" to="/">
-              <i class="header__others--search fas fa-search"></i>
+              <i className="header__others--search fas fa-search"></i>
             </Link>
             <Link className="link__search" to="/Favs">
-              <i class="header__others--bone fas fa-bone"></i>
+              <i className="header__others--bone fas fa-bone"></i>
             </Link>
           </div>
         </header>

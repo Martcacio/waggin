@@ -1,14 +1,100 @@
 @import '../core/variables.scss';
 .header {
-    &__dogFav {
-        &--bone {
-            font-size: 20px;
-            margin-left: 10px;
-            color: $brandColor-1;
-        }
-        &--search {
-            font-size: 20px;
-            color: $brandColor-8;
-        }
+  &__dogFav {
+    &--bone {
+      font-size: 20px;
+      margin-left: 10px;
+      color: $brandColor-1;
     }
+    &--search {
+      font-size: 20px;
+      color: $brandColor-8;
+    }
+  }
+}
+
+.title {
+  font-family: $brandFont;
+  color: $brandColor-4;
+  margin: 10px;
+}
+
+.unfav {
+  width: 25px;
+  height: 25px;
+  border-radius: 23px;
+  box-shadow: 5px 9px 15px -4px rgba(173, 173, 173, 0.9);
+  border: none;
+  transform: translate(320px, 35px);
+  position: relative;
+  z-index: 3;
+  &__cross {
+    color: $brandColor-4;
+  }
+}
+
+.fav-article {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  &__containerImg {
+    height: 200px;
+    background-color: #003c5e8e;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  &__image {
+    height: 200px;
+    z-index: 1;
+    position: relative;
+    margin: auto;
+    &--background {
+      height: 200px;
+      width: calc(95%);
+      background-color: #003c5e8e;
+      border-radius: 10px;
+      position: absolute;
+      filter: blur(6px);
+      z-index: 0;
+    }
+  }
+  &__button {
+    z-index: 2;
+    position: relative;
+    transform: translateY(-50px);
+    width: 100%;
+    height: 45px;
+    text-decoration: none;
+    color: $brandColor-1;
+    font-family: $roboto;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: white;
+    border-radius: 23px;
+    box-shadow: 5px 9px 15px -4px rgba(173, 173, 173, 0.9);
+    border: none;
+    border-radius: 25px;
+  }
+}
+.fav-nameGender {
+  display: flex;
+  justify-content: left;
+  transform: translate(10px, -50px);
+  z-index: 1;
+  position: relative;
+  &__name {
+    font-family: $brandFont;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+  }
+  &__gender {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
 }

@@ -5,10 +5,18 @@ import "../stylesheets/layouts/DogCard.scss";
 import React, { useState } from "react";
 
 const DogCard = (props) => {
-  const [favs, setFavs] = useState("");
-  const handleFavs = () => {
+ /*const [favs, setFavs] = useState("");
+  const handleFavs=()=> {
+    const favDogsStr = localStorage.getItem("favDogs");
+    const favDogs = (favDogsStr === null) ? [] : JSON.parse( favDogsStr );
+
+    favDogs.push( props.dogCard);
+
+    localStorage.setItem( "favDogs", JSON.stringify(favDogs) );
+
     !favs ? setFavs("fav__fav") : setFavs("");
   };
+ */
 
   let genderColor = "";
   if (props.dogCard.gender === "Hembra") {
@@ -75,12 +83,12 @@ const DogCard = (props) => {
                   )}
                 </div>
               </div>
-              <div>
+             {/* <div>
                 <i
                   class={`fas fa-bone fav__bone ${favs}`}
                   onClick={handleFavs}
                 ></i>
-              </div>
+             </div>*/}
             </div>
             <p className="dogCard__community">
               <i className="dogCard__community-icon fas fa-map-marker-alt"></i>

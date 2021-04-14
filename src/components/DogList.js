@@ -6,16 +6,35 @@ import logo from "../images/logo-w.png";
 import logowide from "../images/logo.png";
 
 const DogList = (props) => {
+  const [index, setIndex] = useState(0);
+  console.log(props.dogs.length, index);
+
+
   const handleClickPrev = () => {
     setIndex(index - 1);
   };
   const handleClickSig = () => {
     setIndex(index + 1);
   };
+  const handleFav=()=> {
+    const favDogsStr = localStorage.getItem("favDogs");
+    const favDogs = (favDogsStr === null) ? [] : JSON.parse( favDogsStr );
 
-  const [index, setIndex] = useState(0);
-  console.log(props.dogs.length, index);
+    favDogs.push( props.dogs[ index ] );
 
+    /*if (index > -1) {
+      favDogs.splice(index, 1);
+    } else {
+      favDogs.push(props.dogs);
+    }*/
+
+
+    localStorage.setItem( "favDogs", JSON.stringify(favDogs) );
+
+    setIndex(index + 1);
+  };
+
+ 
   if (props.dogs.length === 0) {
     return (
       <>
@@ -89,26 +108,26 @@ const DogList = (props) => {
           <div className="mainButtons">
             {index + 1 < props.dogs.length ? (
               <button className="buttons__no" onClick={handleClickSig}>
-                <i class="buttons__no--cross fas fa-times"></i>
+                <i className="buttons__no--cross fas fa-times" ></i>
               </button>
             ) : (
               <Link className="link__search" to="/None">
                 <button className="buttons__no">
-                  <i class="buttons__no--cross fas fa-times"></i>
+                  <i className="buttons__no--cross fas fa-times"></i>
                 </button>
               </Link>
             )}
 
             {index + 1 < props.dogs.length ? (
-              <button className="buttons__fav" onClick={handleClickSig}>
-                <i class="buttons__fav--bone fas fa-bone"></i>
+              <button className="buttons__fav" onClick={handleFav}>
+                <i className="buttons__fav--bone fas fa-bone"></i>
               </button>
             ) : (
               <Link className="link__search" to="/None">
                 <button className="buttons__no">
-                  <i class="buttons__fav--bone fas fa-bone"></i>
+                  <i className="buttons__fav--bone fas fa-bone"></i>
                 </button>
-              </Link>
+             </Link>
             )}
           </div>
         </div>
