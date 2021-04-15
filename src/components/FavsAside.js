@@ -70,11 +70,6 @@ const handleUnFav = () => {
           </div>
         </div>
       </div>
-      <Link className="link" to={"/dog/" + item.id}>
-        <li className="">
-          <button className="favAside-article__button"> Ver perfil </button>
-        </li>
-      </Link>
     </article>
     
   </li>

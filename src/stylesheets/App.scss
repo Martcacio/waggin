@@ -62,7 +62,7 @@
   margin: 20px;
   font-size: 20px;
   @media all and (min-width: 768px) {
-    margin-left: 13%;
+    margin-left: 20px;
     font-size: 30px;
   }
 }
@@ -78,7 +78,7 @@
   border-radius: 23px;
   box-shadow: 5px 9px 15px -4px rgba(173, 173, 173, 0.9);
   @media all and (min-width: 768px) {
-    margin: 13%;
+    margin: 13%, 13%, 100px, 13%;
   }
   @media all and (min-width: 1024px) {
     margin-left: 15%;
