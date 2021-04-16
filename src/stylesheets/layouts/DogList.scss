@@ -120,20 +120,21 @@
 .asideMain {
   @media all and (min-width: 1024px) {
     display: grid;
-    grid-template-columns: 30%, 70%;
+    // grid-template-columns: 30%, 70%;
     grid-template-areas: 'aside main';
   }
 }
 .aside {
   display: none;
   @media all and (min-width: 1024px) {
-    display: flex;
-    grid-column: 'aside';
+    //display: flex;
+    grid-area: aside;
+    grid-row: span 1;
   }
 }
 .main {
   @media all and (min-width: 1024px) {
-    grid-column: 'main';
+    grid-area: main;
   }
 }
 

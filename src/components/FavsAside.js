@@ -40,8 +40,8 @@ const handleUnFav = () => {
   return (
   <li key={i}  className={item.name}>
   <article className="favAside-article">
-  <button className="unfav" onClick={handleUnFav}>
-                <i className="unfav__cross fas fa-times" ></i>
+  <button className="unfavAside" onClick={handleUnFav}>
+                <i className="unfavAside__cross fas fa-times" ></i>
               </button>
       <div className="favAside-article__containerImg"> <img
           className="favAside-article__image--background"
@@ -78,8 +78,8 @@ const handleUnFav = () => {
 
 console.log(favDogs);
     return (
-      <>
-      <h1 className="title">Tus peludos favoritos</h1>
+      < >
+      <h1 className="favAside-title">Tus peludos favoritos</h1>
       <div><ul >{favDog}</ul></div>
       </>
       )} 

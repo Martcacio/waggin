@@ -20,6 +20,19 @@ const None = (props) => {
           </Link>
         </div>
       </header>
+      <header className="header2">
+          <div className="logowide">
+            <img className="header2__logo" src={logowide} alt="logo waggin" />
+          </div>
+          <div className="header2__others">
+            <Link className="link__search" to="/">
+              <i className="header2__others--search fas fa-search"></i>
+            </Link>
+            <Link className="link__search" to="/Favs">
+              <i className="header2__others--bone fas fa-bone"></i>
+            </Link>
+          </div>
+        </header>
       <div className="container-ps">
         <img src={logowide} alt="logo" className="container-ps__logo" />
         <p className="container-ps__p1">

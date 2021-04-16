@@ -38,11 +38,12 @@ const handleUnFav = () => {
       favDogs.push(props.dogs[index]);
     }*/
   return (
+
   <li key={i}  className={item.name}>
   <article className="fav-article">
-  <button className="unfav" onClick={handleUnFav}>
-                <i className="unfav__cross fas fa-times" ></i>
-              </button>
+    <button className="unfav" onClick={handleUnFav}>
+      <i className="unfav__cross fas fa-times" ></i>
+    </button>
       <div className="fav-article__containerImg"> <img
           className="fav-article__image--background"
           src={item.url}
@@ -97,7 +98,7 @@ console.log(favDogs);
           </Link>
         </div>
       </header>
-      <h1 className="title">Tus peludos favoritos</h1>
+      <h1 className="fav-title">Tus peludos favoritos</h1>
       <div><ul >{favDog}</ul></div>
       </>
       )} 
