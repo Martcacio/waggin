@@ -211,8 +211,9 @@
     align-items: center;
     box-shadow: 5px 9px 15px -4px rgba(173, 173, 173, 0.9);
     &--bone {
-      font-size: 40px;
-      color: $brandColor-1;
+      height: 40px;
+      width: 40px;
+      transform: rotate(135deg);
     }
   }
   &__no {
@@ -226,8 +227,8 @@
     align-items: center;
     box-shadow: 5px 9px 15px -4px rgba(173, 173, 173, 0.9);
     &--cross {
-      font-size: 40px;
-      color: red;
+      height: 30px;
+      width: 30px;
     }
   }
 }

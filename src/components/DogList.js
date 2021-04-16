@@ -6,6 +6,8 @@ import "../stylesheets/layouts/DogList.scss";
 import "../stylesheets/layouts/FavsAside.scss";
 import logo from "../images/logo-w.png";
 import logowide from "../images/logo.png";
+import hueso from "../images/hueso.svg";
+import cross from "../images/cross.svg";
 
 const DogList = (props) => {
   const [index, setIndex] = useState(0);
@@ -132,23 +134,23 @@ const DogList = (props) => {
           <div className="mainButtons">
             {index + 1 < props.dogs.length ? (
               <button className="buttons__no" onClick={handleClickSig}>
-                <i className="buttons__no--cross fas fa-times" ></i>
+                <img className="buttons__no--cross fas fa-times" src={cross} alt="cruz"/>
               </button>
             ) : (
               <Link className="link__search" to="/None">
                 <button className="buttons__no">
-                  <i className="buttons__no--cross fas fa-times"></i>
+                  <img className="buttons__no--cross fas fa-times" src={cross} alt="cruz"/>
                 </button>
               </Link>
             )}
             {index + 1 < props.dogs.length ? (
               <button className="buttons__fav" onClick={handleFav}>
-                <i className="buttons__fav--bone fas fa-bone"></i>
+          <img className="buttons__fav--bone" src={hueso} alt="hueso" />
               </button>
             ) : (
               <Link className="link__search" to="/None">
                 <button className="buttons__no">
-                  <i className="buttons__fav--bone fas fa-bone"></i>
+                <img className="buttons__fav--bone" src={hueso} alt="hueso" />
                 </button>
              </Link>
             )}
