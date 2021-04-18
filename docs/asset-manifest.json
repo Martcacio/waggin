@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "./static/css/main.aa2eade2.chunk.css",
-    "main.js": "./static/js/main.9fcb2708.chunk.js",
-    "main.js.map": "./static/js/main.9fcb2708.chunk.js.map",
+    "main.css": "./static/css/main.9db34a68.chunk.css",
+    "main.js": "./static/js/main.a52ae076.chunk.js",
+    "main.js.map": "./static/js/main.a52ae076.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.03a77393.js",
     "runtime-main.js.map": "./static/js/runtime-main.03a77393.js.map",
     "static/js/2.b3cfa9a2.chunk.js": "./static/js/2.b3cfa9a2.chunk.js",
     "static/js/2.b3cfa9a2.chunk.js.map": "./static/js/2.b3cfa9a2.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.aa2eade2.chunk.css.map": "./static/css/main.aa2eade2.chunk.css.map",
+    "static/css/main.9db34a68.chunk.css.map": "./static/css/main.9db34a68.chunk.css.map",
     "static/js/2.b3cfa9a2.chunk.js.LICENSE.txt": "./static/js/2.b3cfa9a2.chunk.js.LICENSE.txt",
     "static/media/cross.fa7e5ead.svg": "./static/media/cross.fa7e5ead.svg",
     "static/media/hueso.cfb85e7b.svg": "./static/media/hueso.cfb85e7b.svg"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.03a77393.js",
     "static/js/2.b3cfa9a2.chunk.js",
-    "static/css/main.aa2eade2.chunk.css",
-    "static/js/main.9fcb2708.chunk.js"
+    "static/css/main.9db34a68.chunk.css",
+    "static/js/main.a52ae076.chunk.js"
   ]
 }

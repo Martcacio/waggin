@@ -121,7 +121,7 @@
   @media all and (min-width: 1024px) {
     display: grid;
     // grid-template-columns: 30%, 70%;
-    grid-template-areas: 'aside main';
+    grid-template-areas: 'aside main' 'aside main';
   }
 }
 .aside {
@@ -227,8 +227,8 @@
     align-items: center;
     box-shadow: 5px 9px 15px -4px rgba(173, 173, 173, 0.9);
     &--cross {
-      height: 30px;
-      width: 30px;
+      height: 25px;
+      width: 25px;
     }
   }
 }

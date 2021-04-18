@@ -18,13 +18,13 @@ if (item.gender === "Hembra") {
 }
 
 function handleUnFav(i){
-  const favList = fav.filter((item)=> item.i !== i);
+ const favList = fav.filter((item)=> item.i !== i);
   setFav(favList);
   console.log("CLICK");
   if (favList) {
     favList.splice(i,1);
   }
-}
+  }
 
 /*
 const [fav, setFav] = useState(favDogs);

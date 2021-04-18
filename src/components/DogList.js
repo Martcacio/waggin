@@ -25,6 +25,8 @@ const DogList = (props) => {
     const favDogs = (favDogsStr === null) ? [] : JSON.parse( favDogsStr );
 
     favDogs.push(props.dogs[index]);
+  
+
 
 
     localStorage.setItem( "favDogs", JSON.stringify(favDogs) );
@@ -134,23 +136,23 @@ const DogList = (props) => {
           <div className="mainButtons">
             {index + 1 < props.dogs.length ? (
               <button className="buttons__no" onClick={handleClickSig}>
-                <img className="buttons__no--cross fas fa-times" src={cross} alt="cruz"/>
+                <img className="buttons__no--cross" src={cross} alt="cruz"/>
               </button>
             ) : (
               <Link className="link__search" to="/None">
                 <button className="buttons__no">
-                  <img className="buttons__no--cross fas fa-times" src={cross} alt="cruz"/>
+                  <img className="buttons__no--cross" src={cross} alt="cruz"/>
                 </button>
               </Link>
             )}
             {index + 1 < props.dogs.length ? (
               <button className="buttons__fav" onClick={handleFav}>
-          <img className="buttons__fav--bone" src={hueso} alt="hueso" />
+                <img className="buttons__fav--bone" src={hueso} alt="hueso" />
               </button>
             ) : (
               <Link className="link__search" to="/None">
                 <button className="buttons__no">
-                <img className="buttons__fav--bone" src={hueso} alt="hueso" />
+                 <img className="buttons__fav--bone" src={hueso} alt="hueso" />
                 </button>
              </Link>
             )}
