@@ -23,7 +23,8 @@
     border-radius: 23px;
     box-shadow: 5px 9px 15px -4px rgba(173, 173, 173, 0.9);
     border: none;
-    transform: translate(300px, 35px);
+    transform: translateY(35px);
+    margin-left: 250px;
     position: relative;
     z-index: 3;
     &__cross {
@@ -45,13 +46,12 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     display: flex;
-    justify-content: center;
   }
   &__image {
     height: 200px;
     z-index: 1;
     position: relative;
-    margin: auto;
+    margin: 0;
     &--background {
       height: 200px;
       width: 300px;
@@ -65,7 +65,7 @@
 .favAside-nameGender {
   display: flex;
   justify-content: left;
-  transform: translate(100px, -50px);
+  transform: translate(20px, -50px);
   z-index: 1;
   position: relative;
   &__name {

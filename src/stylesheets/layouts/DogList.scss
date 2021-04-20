@@ -82,6 +82,9 @@
     @media all and (min-width: 768px) {
       margin: 0;
       width: auto;
+      @media all and (min-width: 1024px) {
+        width: 600px;
+      }
     }
     &--background {
       height: 400px;
@@ -94,6 +97,9 @@
       z-index: 0;
       @media all and (min-width: 768px) {
         width: 650px;
+      }
+      @media all and (min-width: 1024px) {
+        width: 600px;
       }
     }
   }
