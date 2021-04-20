@@ -21,6 +21,7 @@
 }
 
 .unfav {
+  cursor: pointer;
   width: 25px;
   height: 25px;
   border-radius: 23px;
@@ -29,6 +30,9 @@
   transform: translate(320px, 35px);
   position: relative;
   z-index: 3;
+  @media all and (min-width: 768px) {
+    transform: translate(200px, 35px);
+  }
   &__cross {
     color: $brandColor-4;
   }
@@ -43,6 +47,7 @@
   @media all and (min-width: 768px) {
     margin-left: 20%;
     margin-right: 20%;
+    width: 200px;
   }
   &__containerImg {
     height: 200px;
@@ -65,9 +70,13 @@
       position: absolute;
       filter: blur(6px);
       z-index: 0;
+      @media all and (min-width: 768px) {
+        width: 300px;
+      }
     }
   }
   &__button {
+    cursor: pointer;
     z-index: 2;
     position: relative;
     transform: translateY(-50px);

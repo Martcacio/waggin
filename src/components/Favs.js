@@ -21,22 +21,8 @@ function handleUnFav(i){
  const favList = fav.filter((item)=> item.i !== i);
   setFav(favList);
   console.log("CLICK");
-  if (favList) {
-    favList.splice(i,1);
-  }
   }
 
-/*
-const [fav, setFav] = useState(favDogs);
-const handleUnFav = () => {
-  !fav ? setFav("favDogs") : setFav("");*/
-
-
-  /*if (index > -1) {
-      favDogs.splice(props.dogs[index], 1);
-    } else {
-      favDogs.push(props.dogs[index]);
-    }*/
   return (
 
   <li key={i}  className={item.name}>

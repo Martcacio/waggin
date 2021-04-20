@@ -13,16 +13,32 @@
     }
   }
 }
-
+.dogContainer {
+  @media all and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 60%;
+  }
+}
 .articleDC {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
+  @media all and (min-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
   &__containerImg {
     height: 500px;
     background-color: $brandColor-8;
   }
   &__image {
     width: 100%;
+    @media all and (min-width: 768px) {
+      max-height: 400px;
+    }
   }
 }
 
@@ -33,7 +49,6 @@
 
 .nameGenderDC {
   display: flex;
-
   justify-content: space-between;
   &__name {
     font-family: $brandFont;
@@ -116,6 +131,7 @@
 }
 
 .asociation {
+  cursor: pointer;
   text-decoration: none;
   margin-top: 20px;
   margin-bottom: 60px;

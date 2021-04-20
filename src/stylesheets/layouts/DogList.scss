@@ -70,6 +70,7 @@
     justify-content: center;
     @media all and (min-width: 768px) {
       width: 50%;
+      margin-top: 20px;
     }
   }
   &__image {
@@ -97,6 +98,7 @@
     }
   }
   &__button {
+    cursor: pointer;
     transform: translateY(-50px);
     width: 100%;
     height: 45px;
@@ -171,12 +173,12 @@
   margin-left: 20px;
   margin-right: 20px;
   transform: translateY(-60px);
-
   @media all and (min-width: 768px) {
     width: 50%;
     margin: auto;
   }
   &__prev {
+    cursor: pointer;
     width: 40px;
     height: 40px;
     background-color: white;
@@ -201,6 +203,7 @@
     }
   }
   &__fav {
+    cursor: pointer;
     width: 100px;
     height: 100px;
     background-color: white;
@@ -217,6 +220,7 @@
     }
   }
   &__no {
+    cursor: pointer;
     width: 100px;
     height: 100px;
     background-color: white;

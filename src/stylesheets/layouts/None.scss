@@ -20,6 +20,7 @@
     margin-bottom: 10px;
   }
   &__search {
+    cursor: pointer;
     text-decoration: none;
     color: $brandColor-3;
     font-family: $roboto;
@@ -37,6 +38,7 @@
     }
   }
   &__favs {
+    cursor: pointer;
     text-decoration: none;
     color: $brandColor-1;
     font-family: $roboto;
